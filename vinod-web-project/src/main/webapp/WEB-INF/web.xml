@@ -18,7 +18,20 @@
 			<servlet-name>MyFirstServlet</servlet-name>
 			<servlet-class>com.vinod.MyFirstServlet</servlet-class>
 		</servlet>
+		<servlet>
+			<description>
+			</description>
+			<display-name>MyServletDispatcher</display-name>
+			<servlet-name>MyServletDispatcher</servlet-name>
+			<servlet-class>com.vinod.MyServletDispatcher</servlet-class>
+		</servlet>
+		
 		<servlet-mapping>
 			<servlet-name>MyFirstServlet</servlet-name>
     <url-pattern>/MyFirstServlet</url-pattern>		</servlet-mapping>
+		<servlet-mapping>
+			<servlet-name>MyServletDispatcher</servlet-name>
+			<url-pattern>/MyServletDispatcher</url-pattern>
+		</servlet-mapping>
+		
 	</web-app>
